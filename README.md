@@ -1,6 +1,6 @@
 # ![JPousong](./img/011.jpg)
 
-Construction d'un site perso d'un musicos. :musical_note: :guitar:
+Construction d'un site perso d'un poto musicos. :guitar:
 
 ## Sommaire
 
@@ -19,7 +19,7 @@ Construction d'un site perso d'un musicos. :musical_note: :guitar:
 
 ## CONTACT
 
-[JPousong](https://github.com/FredTams79) :smiley:
+[JPousong](https://github.com/FredTams79) :musical_note:
 
 > Ce site a été réalisé comme projet perso suite à ma formation Développeur Web
 > d'[Openclassrooms](https://openclassrooms.com/fr/paths/185-developpeur-web).
