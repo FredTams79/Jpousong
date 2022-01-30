@@ -19,7 +19,7 @@ Construction d'un site perso d'un poto musicos. :guitar:
 
 ## CONTACT
 
-[JPousong](https://github.com/FredTams79) :musical_note:
+[JPousong](https://fredtams79.github.io/Jpousong/) :musical_note:
 
 > Ce site a été réalisé comme projet perso suite à ma formation Développeur Web
 > d'[Openclassrooms](https://openclassrooms.com/fr/paths/185-developpeur-web).
