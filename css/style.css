@@ -5,7 +5,7 @@
 }
 
 body {
-   font-family: Verdana, Impact, Georgia, Arial;
+  font-family: Verdana, Impact, Georgia, Arial;
   background-color: ivory;
   padding: 0;
   box-sizing: border-box;
@@ -21,14 +21,12 @@ h2,
 h3 {
   text-align: center;
   font-weight: bold;
-
 }
 
 header,
 main,
 section {
- margin: 40px auto;
-
+  margin: 40px auto;
 }
 
 /***** LOADING SPINNER *****/
@@ -37,15 +35,15 @@ section {
   animation: spin 5s 1.5s both;
 }
 .center {
- height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #000;
 }
 .wave {
-  width: 5px;
-  height: 100px;
+  width: 10px;
+  height: 200px;
   background: linear-gradient(45deg, cyan, #fff);
   margin: 10px;
   animation: wave 1s linear infinite;
@@ -53,11 +51,11 @@ section {
 }
 .wave span {
   color: ivory;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   display: flex;
   justify-content: center;
-
+  margin-top: 50px;
 }
 .wave:nth-child(2) {
   animation-delay: 0.1s;
@@ -103,6 +101,7 @@ section {
   to {
     opacity: 0;
     height: 0;
+    width: 0;
   }
 }
 
@@ -129,18 +128,7 @@ header {
   justify-content: space-between;
   align-items: flex-end;
 }
-/*header h1 {
-  font-family: "BallparkWeiner", serif;
-  font-size: 2.5em;
-  font-weight: normal;
-  margin: 0 0 0 10px;
-}
-header h2 {
-  font-family: "Dayrom", serif;
-  font-size: 1.1em;
-  font-weight: normal;
-  margin-top: 0px;
-}*/
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -150,16 +138,6 @@ nav li {
   margin-right: 15px;
   margin-bottom: 15px;
 }
-/*nav a {
-  font-size: 1.3em;
-  color: #181818;
-  padding-bottom: 3px;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #760001;
-  border-bottom: 3px solid #760001;
-}*/
 
 /***** BANNIERE *****/
 #entete2 {
@@ -201,7 +179,6 @@ nav a:hover {
   border: 0;
 }
 
-
 /***** MAIN *****/
 .presentation {
   text-align: center;
@@ -221,15 +198,15 @@ nav a:hover {
   padding: 0 50px;
 }
 .fa-envelope-square {
-color : ivory;
+  color: ivory;
 }
 .fa-youtube {
-color : red;
+  color: red;
 }
 .fa-facebook {
-background-color: ivory;
-    border-radius: 50%;
-    padding: 1px;
+  background-color: ivory;
+  border-radius: 50%;
+  padding: 1px;
 }
 
 /***** FOOTER *****/
@@ -237,13 +214,13 @@ background-color: ivory;
 
 }*/
 .fred {
-    position: fixed;
-    bottom: 0;
-    padding: 10px;
-    text-align: start;
-    font-size: 10px;
-    width: 100%;
-    color: grey;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  text-align: start;
+  font-size: 10px;
+  width: 100%;
+  color: grey;
 }
 
 /* DATE */
@@ -268,10 +245,10 @@ background-color: ivory;
   position: absolute;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
   animation: rotate360 60s infinite forwards linear;
 }
-.carousel__face { 
+.carousel__face {
   position: absolute;
   width: 300px;
   height: 300px; /*187px*/
@@ -280,39 +257,46 @@ background-color: ivory;
   right: 10px;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   display: flex;
 }
 
 .carousel__face:nth-child(1) {
   background-image: url("../img/001.jpg");
-  transform: rotateY(  0deg) translateZ(430px); }
-.carousel__face:nth-child(2) { 
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) {
   background-image: url("../img/002.jpg");
-    transform: rotateY( 40deg) translateZ(430px); }
+  transform: rotateY(40deg) translateZ(430px);
+}
 .carousel__face:nth-child(3) {
   background-image: url("../img/003.jpg");
-  transform: rotateY( 80deg) translateZ(430px); }
+  transform: rotateY(80deg) translateZ(430px);
+}
 .carousel__face:nth-child(4) {
   background-image: url("../img/004.jpg");
-  transform: rotateY(120deg) translateZ(430px); }
-.carousel__face:nth-child(5) { 
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) {
   background-image: url("../img/005.jpg");
- transform: rotateY(160deg) translateZ(430px); }
-.carousel__face:nth-child(6) { 
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) {
   background-image: url("../img/006.jpg");
- transform: rotateY(200deg) translateZ(430px); }
-.carousel__face:nth-child(7) { 
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) {
   background-image: url("../img/007.jpg");
- transform: rotateY(240deg) translateZ(430px); }
+  transform: rotateY(240deg) translateZ(430px);
+}
 .carousel__face:nth-child(8) {
   background-image: url("../img/008.jpg");
-  transform: rotateY(280deg) translateZ(430px); }
+  transform: rotateY(280deg) translateZ(430px);
+}
 .carousel__face:nth-child(9) {
   background-image: url("../img/009.jpg");
-  transform: rotateY(320deg) translateZ(430px); }
-
-
+  transform: rotateY(320deg) translateZ(430px);
+}
 
 @keyframes rotate360 {
   from {
@@ -323,9 +307,12 @@ background-color: ivory;
   }
 }
 
+.fa-search-plus {
+  color: ivory;
+}
 
 a:hover {
-    cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
+  cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
 
   font-style: italic;
   color: ivory;
@@ -334,20 +321,15 @@ a:link {
   font-weight: bold;
   text-decoration: none;
   color: #000;
-}/*
-a:visited {
-  color: rgb(0, 85, 125);
 }
-*/
+a:visited {
+  color: black;
+}
 
 /***** CURSEUR GUITARE *****/
 /* Start https://www.cursors-4u.com */
 * {
   cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec85.cur), auto !important;
   /*  cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important; */
-
 }
-  /* End https://www.cursors-4u.com */
-
- 
-
+/* End https://www.cursors-4u.com */
