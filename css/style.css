@@ -22,7 +22,9 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
-
+h1 {
+  color: #fff;
+}
 header,
 main,
 section {
@@ -50,7 +52,7 @@ section {
   border-radius: 20px;
 }
 .wave span {
-  color: ivory;
+  color: #fff;
   font-size: 4rem;
   font-weight: 600;
   display: flex;
@@ -130,14 +132,14 @@ section {
   padding-top: 12px;
   border-radius: 30px;
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid #000;
   transition: 0.7s;
   -webkit-transition: 0.7s;
   -moz-transition: 0.7s;
   -ms-transition: 0.7s;
   -o-transition: 0.7s;
   font-size: 22px;
-  color: black;
+  color: #000;
 }
 .btn:hover {
   transform: rotate(30deg);
@@ -184,23 +186,6 @@ section {
   background-color: rgba(24, 24, 24, 0.8);
   color: ivory;
   font-size: 0.8em;
-}
-.boutonrouge {
-  height: 25px;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  background: url("../img/fond_degraderouge.png") repeat-x;
-  border: 1px solid #760001;
-  border-radius: 5px;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 3px 8px 0px 8px;
-  color: ivory;
-  text-decoration: none;
-}
-.boutonrouge img {
-  border: 0;
 }
 
 /***** MAIN *****/
@@ -267,7 +252,7 @@ section {
   font-weight: bold;
   margin-bottom: 2rem;
   margin-right: 1rem;
-  color: grey;
+  color: ivory;
 }
 
 /* CAROUSEL */
@@ -369,7 +354,7 @@ a:link {
   color: #000;
 }
 a:visited {
-  color: black;
+  color: #000;
 }
 
 /***** CURSEUR GUITARE *****/
