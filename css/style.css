@@ -6,7 +6,7 @@
 
 body {
   font-family: Verdana, Impact, Georgia, Arial;
-  background-color: ivory;
+  background-color: #b0c4de;
   padding: 0;
   box-sizing: border-box;
 }
@@ -108,35 +108,59 @@ section {
 /***** HEADER *****/
 
 #entete1 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
+  margin: 20px;
 }
-#logo {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+.logo {
+  grid-area: 1 / 3 / 2 / 7;
+  width: 50%;
 }
-#logo img {
-  width: 250px;
-  height: 76px;
+.logo img {
+  border-radius: 30% 10% 30% 10%;
 }
-header {
-  background-image: url("../img/separateur.png");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.btn {
+  text-align: center;
+  /*position: absolute;*/
+  width: 60px;
+  height: 60px;
+  padding-top: 12px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 1px solid black;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  font-size: 22px;
+  color: black;
 }
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: auto;
+.btn:hover {
+  transform: rotate(30deg);
+  background-color: #4682b4;
+  cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
 }
-nav li {
-  margin-right: 15px;
-  margin-bottom: 15px;
+.fa-info:hover,
+.fa-camera:hover,
+.fa-icons:hover,
+.fa-envelope:hover {
+  cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
+}
+.btn1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.btn2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.btn3 {
+  grid-area: 1 / 7 / 2 / 8;
+}
+.btn4 {
+  grid-area: 1 / 8 / 2 / 9;
 }
 
 /***** BANNIERE *****/
@@ -196,8 +220,15 @@ nav li {
 .liens img {
   height: 75px;
   padding: 0 50px;
+  transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.fa-envelope-square {
+.liens img:hover {
+  transform: scale(1.2);
+  background-color: #4682b4;
+  border-radius: 60%;
+  cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
+}
+/*.fa-envelope-square {
   color: ivory;
 }
 .fa-youtube {
@@ -207,7 +238,7 @@ nav li {
   background-color: ivory;
   border-radius: 50%;
   padding: 1px;
-}
+}*/
 
 /***** FOOTER *****/
 /*#footer {
@@ -220,7 +251,7 @@ nav li {
   text-align: start;
   font-size: 10px;
   width: 100%;
-  color: grey;
+  color: ivory;
 }
 
 .hautpage {
@@ -252,7 +283,7 @@ nav li {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  animation: rotate360 60s infinite forwards linear;
+  animation: rotate360 100s infinite forwards linear;
 }
 .carousel__face {
   position: absolute;
@@ -319,6 +350,11 @@ nav li {
 
 .fa-search-plus {
   color: ivory;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fa-search-plus:hover {
+  transform: scale(1.4);
+  cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
 }
 
 a:hover {
