@@ -196,8 +196,6 @@ section {
   .logo {
     grid-area: 1 / 1 / 2 / 5;
   }
-  .btn {
-  }
   .btn1 {
     grid-area: 2 / 1 / 3 / 2;
   }
