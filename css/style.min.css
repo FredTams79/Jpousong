@@ -359,7 +359,8 @@ footer {
     -ms-grid-column-span: 1;
     grid-area: 2 / 4 / 3 / 5;
   }
-} /***** END HEADER *****/ /***** BANNIERE *****/
+} /***** END HEADER *****/
+/***** BANNIERE *****/
 @media screen and (max-width: 768px) {
   #entete2 {
     display: none;
@@ -386,7 +387,8 @@ footer {
   background-color: rgba(24, 24, 24, 0.8);
   color: ivory;
   font-size: 0.8em;
-} /***** END BANNIERE *****/ /***** MAIN *****/
+} /***** END BANNIERE *****/
+/***** MAIN *****/
 .presentation {
   text-align: center;
 }
@@ -415,7 +417,32 @@ footer {
   .guitare {
     display: none;
   }
-} /***** END MAIN *****/ /***** SECTION *****/
+}
+.photoAnnonce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 400px;
+  margin: 40px auto;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .photoAnnonce {
+    height: 300px;
+    margin: 30px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .photoAnnonce {
+    height: 200px;
+    margin: 20px auto;
+  }
+}
+
+/***** END MAIN *****/
+/***** SECTION *****/
 .liens1 {
   display: none;
 }
@@ -545,7 +572,8 @@ footer {
   .liens2 {
     display: none;
   }
-} /***** END SECTION *****/ /***** FOOTER *****/
+} /***** END SECTION *****/
+/***** FOOTER *****/
 @media screen and (min-width: 1024px) {
   footer {
     margin-top: 100px;
@@ -648,7 +676,7 @@ footer {
   transform: rotateY(80deg) translateZ(495px);
 }
 .carousel_img:nth-child(4) {
-  background-image: url("../img/004.jpg");
+  background-image: url("../img/020.jpg");
   -webkit-transform: rotateY(120deg) translateZ(495px);
   transform: rotateY(120deg) translateZ(495px);
 }
