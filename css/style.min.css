@@ -51,7 +51,9 @@ main,
 section,
 footer {
   margin: 40px auto;
-} /***** LOADING SPINNER *****/
+}
+
+/***** LOADING SPINNER *****/
 .loader {
   height: 100vh;
   -webkit-animation: spin 5s 1.5s both;
@@ -169,7 +171,10 @@ footer {
     height: 0;
     width: 0;
   }
-} /***** END SPINNER *****/ /***** HEADER *****/
+}
+/***** END SPINNER *****/
+
+/***** HEADER *****/
 #entete1 {
   display: -ms-grid;
   display: grid;
@@ -359,7 +364,9 @@ footer {
     -ms-grid-column-span: 1;
     grid-area: 2 / 4 / 3 / 5;
   }
-} /***** END HEADER *****/
+}
+/***** END HEADER *****/
+
 /***** BANNIERE *****/
 @media screen and (max-width: 768px) {
   #entete2 {
@@ -387,7 +394,9 @@ footer {
   background-color: rgba(24, 24, 24, 0.8);
   color: ivory;
   font-size: 0.8em;
-} /***** END BANNIERE *****/
+}
+/***** END BANNIERE *****/
+
 /***** MAIN *****/
 .presentation {
   text-align: center;
@@ -442,6 +451,7 @@ footer {
 }
 
 /***** END MAIN *****/
+
 /***** SECTION *****/
 .liens1 {
   display: none;
@@ -572,7 +582,9 @@ footer {
   .liens2 {
     display: none;
   }
-} /***** END SECTION *****/
+}
+/***** END SECTION *****/
+
 /***** FOOTER *****/
 @media screen and (min-width: 1024px) {
   footer {
@@ -620,7 +632,10 @@ footer {
   -ms-transform: scale(1.1) rotate(-20deg);
   transform: scale(1.1) rotate(-20deg);
   cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
-} /* CAROUSEL */ /* carousel 1*/
+}
+
+/* CAROUSEL */
+/* carousel 1*/
 .contenu_carou_auto {
   margin: 3rem auto 1rem auto;
   width: 420px;
@@ -643,7 +658,7 @@ footer {
 }
 .carousel-image {
   -webkit-animation: rotation 90s infinite alternate linear;
-  animation: rotation 90s infinite alternate linear;
+  animation: rotation 60s infinite alternate linear;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: relative;
@@ -845,7 +860,8 @@ footer {
     img:nth-child(n) {
     -webkit-filter: drop-shadow(12px 12px 7px hsla(0, 0%, 0%, 0.5));
     filter: drop-shadow(12px 12px 7px hsla(0, 0%, 0%, 0.5));
-  } /*gauche*/
+  }
+  /*gauche*/
   .jpousong_diapo #ja_un:checked ~ .contenu_ja .jpousong {
     -webkit-transform: translateZ(-270px);
     transform: translateZ(-270px);
@@ -881,7 +897,8 @@ footer {
   .jpousong_diapo #ja_neuf:checked ~ .contenu_ja .jpousong {
     -webkit-transform: translateZ(-270px) rotateY(-320deg);
     transform: translateZ(-270px) rotateY(-320deg);
-  } /*droite*/
+  }
+  /*droite*/
   .jpousong_diapo #ja_un:checked ~ .contenu_ja .jpousong img:nth-child(1) {
     -webkit-transform: translateZ(270px) scale(1);
     transform: translateZ(270px) scale(1);
@@ -927,7 +944,10 @@ footer {
     transform: rotateY(320deg) translateZ(270px) scale(1);
     opacity: 1;
   }
-} /***** end carousel *****/ /***** END FOOTER *****/
+}
+/***** end carousel *****/
+/***** END FOOTER *****/
+
 a:hover {
   cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec82.cur), auto !important;
   font-style: italic;
